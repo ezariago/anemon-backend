@@ -1,0 +1,13 @@
+ktor:
+  application:
+    modules:
+      - me.ezar.anemon.ApplicationKt.module
+  deployment:
+    port: 80
+    sslPort: 443
+  security:
+    ssl:
+      keyStore: keystore.jks
+      keyAlias: anemon
+      keyStorePassword: anemon
+      privateKeyPassword: anemon
